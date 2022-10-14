@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../dist/output.css">
+  <title>TailwindCSS Portfolio</title>
+</head>
+<body class="font-poppins bg-base text-white">
+  <header>
+    <nav class="container mx-auto flex justify-between items-center p-6">
+      <div class="text-2xl">Tailwind.Portfolio</div>
+      <div class="space-x-6 hidden md:flex items-center">
+        <a href="#home" class="hover:text-link-text transition-all duration-300">ホーム</a>
+        <a href="#portfolio" class="hover:text-link-text transition-all duration-300">ポートフォリオ</a>
+        <a href="#skills" class="hover:text-link-text transition-all duration-300">スキル一覧</a>
+        <a href="#contact">
+          <button class="primary-btn p-2">
+            お問い合わせ
+          </button>
+        </a>
+      </div>
+      <div class="md:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container mx-auto flex justify-center items-center p-6 flex-wrap space-x-6">
+      <div class="mb-4 lg:mb-0">
+        <h2 class="text-5xl mb-6 text-center lg:text-left">
+          TailWindCSSで<br />
+          美しいサイトを<br />
+          作ります
+        </h2>
+        <div class="text-center lg:text-left">
+          <button class="primary-btn py-2 px-4">
+            <i class="fa fa-rocket"></i>
+            <span>もっと見る</span>
+          </button>
+        </div>
+      </div>
+      <div class="md:w-4/5 lg:w-1/2 w-full">
+        <img src="../public/img/greg-rakozy-oMpAz-DN-9I-unsplash.jpg" alt="hero">
+      </div>
+    </div>
+    <div id="portfolio" class="container mx-auto flex justify-center items-center p-6 mt-16">
+      <section class="w-full">
+        <h2 class="secondary-title">私のポートフォリオ</h2>
+        <p class="section-paragraph">私が作ってきたwebアプリケーションはこちら</p>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2">
+          <img src="../public/img/portfolio1.jpg" alt="portfolio1" class="w-full h-32 md:h-72 object-cover rounded-md">
+          <img src="../public/img/portfolio2.jpg" alt="portfolio2" class="w-full h-32 md:h-72 object-cover rounded-md">
+          <img src="../public/img/portfolio3.jpg" alt="portfolio3" class="w-full h-32 md:h-72 object-cover rounded-md">
+          <img src="../public/img/portfolio4.jpg" alt="portfolio4" class="w-full h-32 md:h-72 object-cover rounded-md">
+          <img src="../public/img/portfolio5.jpg" alt="portfolio5" class="w-full h-32 md:h-72 object-cover rounded-md">
+          <img src="../public/img/portfolio6.jpg" alt="portfolio6" class="w-full h-32 md:h-72 object-cover rounded-md">
+        </div>
+      </section>
+    </div>
+    <div id="skills" class="container mx-auto flex justify-center items-center p-6 mt-16">
+      <section class="w-full">
+        <h2 class="secondary-title">スキルスタック</h2>
+        <p class="section-paragraph">私は以下のスキルを習得しています</p>
+        <div class="my-16">
+          <div class="w-full border border-purple-300 px-24 py-16 lg:p-14 flex lg:flex-row flex-col justify-center lg:justify-start items-center hover:border-emerald-500 transition-all duration-300 cursor-pointer space-x-8 lg:space-x-16">
+            <div class="self-center mb-6 lg:mb-0">
+              <i class="fa-brands fa-vuejs text-9xl text-emerald-500"></i>
+            </div>
+            <div class="space-y-4  text-center lg:text-left">
+              <h3 class="text-3xl"> Vue.js</h3>
+              <div class="flex flex-wrap gap-4 w-full">
+                <div class="badge rounded">ウェブ開発</div>
+                <div class="badge rounded">フロントエンド開発</div>
+              </div>
+              <p class="text-secondary">Vue2で開発をしています。現在Vue3も勉強中です。</p>
+            </div>
+          </div>
+        </div>
+        <div class="my-16">
+          <div class="w-full border border-purple-300 px-24 py-16 lg:p-14 flex lg:flex-row flex-col justify-center lg:justify-start items-center hover:border-yellow-300 transition-all duration-300 cursor-pointer space-x-8 lg:space-x-16">
+            <div class="mb-6 lg:mb-0">
+              <i class="fa-brands fa-js-square text-9xl text-yellow-300"></i>
+            </div>
+            <div class="space-y-4">
+              <h3 class="text-3xl">Javascript</h3>
+              <div class="flex flex-wrap gap-4 w-full">
+                <div class="badge rounded">ウェブ開発</div>
+                <div class="badge rounded">フロントエンド開発</div>
+              </div>
+              <p class="text-secondary">Javascriptエンジニア。Typescriptをメインで使用してます。</p>
+            </div>
+          </div>
+        </div>
+        <div class="my-16">
+          <div class="w-full border border-purple-300 px-24 py-16 lg:p-14 flex lg:flex-row flex-col justify-center lg:justify-start items-center hover:border-orange-400 transition-all duration-300 cursor-pointer space-x-8 lg:space-x-16">
+            <div class="mb-6 lg:mb-0">
+              <i class="fa-brands fa-aws text-9xl text-orange-400"></i>
+            </div>
+            <div class="space-y-4">
+              <h3 class="text-3xl">AWS</h3>
+              <div class="flex flex-wrap gap-4">
+                <div class="badge rounded">ウェブ開発</div>
+                <div class="badge rounded">クラウドエンジニア</div>
+              </div>
+              <p class="text-secondary">ソリューションアーキテクトを取得しています。実務経験は少々あります。</p>
+            </div>
+          </div>
+        </div>
+        <div class="my-16">
+          <div class="w-full border border-purple-300 px-24 py-16 lg:p-14 flex lg:flex-row flex-col justify-center lg:justify-start items-center hover:border-sky-300 transition-all duration-300 cursor-pointer space-x-8 lg:space-x-16">
+            <div class="mb-6 lg:mb-0">
+              <i class="fa-brands fa-react text-9xl text-sky-300"></i>
+            </div>
+            <div class="space-y-4">
+              <h3 class="text-3xl">React.js</h3>
+              <div class="flex flex-wrap gap-4">
+                <div class="badge rounded">ウェブ開発</div>
+                <div class="badge rounded">フロントエンド開発</div>
+              </div>
+              <p class="text-secondary">こちらは現在勉強中です。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="contact" class="container mx-auto flex justify-center items-center p-6 mb-20">
+      <section class="w-full">
+        <h2 class="secondary-title">お問い合わせ</h2>
+        <p class="section-paragraph">私の経歴が気になる方はご一報ください。即時対応します。</p>
+        <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-16">
+          <div class="space-y-6">
+            <div>
+              <label for="name" class="text-white block mb-6 text-xl font-bold">お名前</label>
+              <input type="text" name="name" class="bg-input border-inputBorder rounded p-2 w-full" />
+            </div>
+            <div>
+              <label for="email" class="text-white block mb-6 text-xl font-bold">メールアドレス</label>
+              <input type="text" name="email" class="bg-input border-inputBorder rounded p-2 w-full" />
+            </div>
+            <div>
+              <label for="msg" class="text-white block mb-6 text-xl font-bold">メッセージ</label>
+              <input type="text" name="msg" class="bg-input border-inputBorder rounded p-2 w-full" />
+            </div>
+            <button class="primary-btn px-4 py-2">送信する</button>
+          </div>
+          <div class="flex flex-col justify-center">
+            <p class="text-secondary">080-7893-1736</p>
+            <p class="text-white">example@test.com</p>
+            <div class="flex mt-20 space-x-4">
+              <i class="fa-brands fa-twitter text-sky-500 text-3xl cursor-pointer"></i>
+              <i class="fa-brands fa-facebook text-blue-600 text-3xl cursor-pointer"></i>
+              <i class="fa-brands fa-instagram text-pink-600 text-3xl cursor-pointer"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
